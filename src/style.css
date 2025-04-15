@@ -1,3 +1,119 @@
 body {
   margin: 0;
 }
+
+.container1200 {
+  top: -97px;
+  left: -601px;
+
+  width: 1200;
+  height: 60;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header__logo {
+  top: 10px;
+  left: 50px;
+
+  display: flex;
+  align-items: center;
+
+  width: 40;
+  height: 40;
+}
+
+.href_1 {
+  top: 22.5px;
+  left: 509px;
+
+  display: flex;
+  align-items: center;
+
+  width: 37;
+  height: 15;
+}
+
+.href_2 {
+  top: 22.5px;
+  left: 566px;
+
+  display: flex;
+  align-items: center;
+
+  width: 58;
+  height: 15;
+}
+
+.href_3 {
+  top: 22px;
+  left: 644px;
+
+  display: flex;
+  align-items: center;
+
+  width: 88;
+  height: 15;
+}
+
+.href_4 {
+  top: 22px;
+  left: 752px;
+
+  display: flex;
+  align-items: center;
+
+  width: 138;
+  height: 15;
+}
+
+.href_5 {
+  top: 22.5px;
+  left: 900px;
+
+  display: flex;
+  align-items: center;
+
+  width: 37;
+  height: 15;
+}
+
+.href_6 {
+  top: 22px;
+  left: 984px;
+
+  display: flex;
+  align-items: center;
+
+  width: 51;
+  height: 15;
+}
+
+.href_7 {
+  top: 22px;
+  left: 1055px;
+
+  display: flex;
+  align-items: center;
+
+  width: 40;
+  height: 15;
+}
+
+.href_8 {
+  top: 22px;
+  left: 1115px;
+
+  display: flex;
+  align-items: center;
+
+  width: 35;
+  height: 15;
+}
