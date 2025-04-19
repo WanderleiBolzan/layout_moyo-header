@@ -2,118 +2,90 @@ body {
   margin: 0;
 }
 
-.container1200 {
-  top: -97px;
-  left: -601px;
-
-  width: 1200;
-  height: 60;
-
+.header {
+  align-items: center;
   background-color: rgba(255, 255, 255, 1);
-}
-
-.header__nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  max-height: 60px;
+  padding: 0 50px;
+  position: relative;
 }
 
-.header__logo {
-  top: 10px;
+.logo {
+  display: block;
   left: 50px;
-
-  display: flex;
-  align-items: center;
-
-  width: 40;
-  height: 40;
+  top: 10px;
 }
 
-.href_1 {
-  top: 22.5px;
-  left: 509px;
-
+.nav__item {
   display: flex;
-  align-items: center;
-
-  width: 37;
-  height: 15;
+  margin-left: 20px;
+  padding: 0;
+  position: relative;
 }
 
-.href_2 {
-  top: 22.5px;
-  left: 566px;
-
-  display: flex;
-  align-items: center;
-
-  width: 58;
-  height: 15;
+.nav__list > .nav__item:first-child {
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.href_3 {
-  top: 22px;
-  left: 644px;
-
+.nav__list {
   display: flex;
-  align-items: center;
-
-  width: 88;
-  height: 15;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.href_4 {
-  top: 22px;
-  left: 752px;
-
-  display: flex;
+a {
   align-items: center;
-
-  width: 138;
-  height: 15;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  height: 60px;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.href_5 {
-  top: 22.5px;
-  left: 900px;
-
-  display: flex;
-  align-items: center;
-
-  width: 37;
-  height: 15;
+a:hover {
+  color: rgba(0, 172, 220, 1);
 }
 
-.href_6 {
-  top: 22px;
-  left: 984px;
-
+a.is-active {
+  color: rgba(0, 172, 220, 1);
   display: flex;
-  align-items: center;
-
-  width: 51;
-  height: 15;
+  position: relative;
+  padding-left: 0;
 }
 
-.href_7 {
-  top: 22px;
-  left: 1055px;
-
-  display: flex;
-  align-items: center;
-
-  width: 40;
-  height: 15;
+a.is-active::after {
+  border-radius: 2px;
+  background-color: rgba(0, 172, 220, 1);
+  color: rgba(0, 172, 220, 1);
+  bottom: 0;
+  content: '';
+  height: 4px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  transition: opacity 0.3s;
 }
 
-.href_8 {
-  top: 22px;
-  left: 1115px;
+a.is-active:hover::after {
+  opacity: 1;
+}
 
-  display: flex;
-  align-items: center;
+a.is-active:focus::after {
+  opacity: 1;
+}
 
-  width: 35;
-  height: 15;
+a:not(.is-active):focus {
+  color: rgba(0, 172, 220, 1);
 }
